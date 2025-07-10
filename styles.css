@@ -1,0 +1,279 @@
+:root {
+    --primary-bg: #FFF1E6;       /* creamy background */
+    --secondary-bg: #FFF7ED;     /* lighter cream */
+    --header-bg: #800000;        /* maroon */
+    --nav-bg: #FFF7ED;           /* match secondary */
+    --card-bg: #FFF7ED;          /* match secondary */
+    --accent: #6D1717;           /* deep maroon accent */
+    --divider: #FFD6B3;          /* soft cream divider */
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--primary-bg);
+    color: var(--accent);
+}
+.header {
+    background: var(--header-bg);
+    text-align: center;
+    padding: 38px 0 16px 0;
+}
+.header h1 {
+    font-size: 2.3rem;
+    margin: 0;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 600;
+}
+.nav {
+    background: var(--nav-bg);
+    text-align: center;
+    padding: 12px 0;
+}
+.nav a {
+    color: var(--accent);
+    text-decoration: none;
+    padding: 7px 22px;
+    margin: 0 6px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+.nav a:hover, .nav .active {
+    background: #FFD6B3;
+}
+.profile-section {
+    display: flex;
+    align-items: stretch;
+    background: var(--secondary-bg);
+    margin: 36px auto 0 auto;
+    border-radius: 16px;
+    max-width: 1050px;
+    min-height: 320px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.13);
+    overflow: hidden;
+}
+.profile-photo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-bg);
+    padding: 24px 0;
+}
+.profile-photo img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid var(--secondary-bg);
+    background: #eaeaea;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+}
+.profile-desc {
+    flex: 2;
+    padding: 36px 40px 36px 40px;
+    background: var(--card-bg);
+    border-left: 2px solid #FFD6B3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-desc h2 {
+    font-size: 1.7rem;
+    margin: 0 0 18px 0;
+    font-weight: 600;
+    color: #800000;
+    letter-spacing: 1px;
+}
+.profile-desc p {
+    font-size: 1.06rem;
+    line-height: 1.7;
+    margin: 0;
+    color: #6D1717;
+}
+.section-divider {
+    border: none;
+    border-top: 2px solid var(--divider);
+    margin: 48px auto 40px auto;
+    max-width: 1080px;
+}
+
+.edu-proj-section {
+    display: flex;
+    max-width: 1050px;
+    margin: 0 auto;
+    gap: 48px;
+    align-items: flex-start;
+    background: none;
+}
+.edu-exp-left, .project-section {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 30px 26px 28px 26px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+.edu-exp-left {
+    flex: 1;
+    border-right: 2px solid #FFD6B3;
+}
+.edu-exp-left h2 {
+    font-size: 1.35rem;
+    margin-bottom: 18px;
+    font-weight: 600;
+    color: #800000;
+    letter-spacing: 1px;
+}
+.edu-exp-left .edu {
+    margin-bottom: 22px;
+}
+.edu-exp-left .edu b {
+    font-size: 1.08rem;
+}
+.edu-exp-left .edu span {
+    display: block;
+    color: #6D1717;
+    font-size: 0.98rem;
+    margin-bottom: 4px;
+}
+.project-section {
+    max-width: 1000px;
+    margin: 36px auto 0 auto;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 30px 26px 28px 26px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+.project-section h2 {
+    font-size: 1.35rem;
+    margin-bottom: 18px;
+    font-weight: 600;
+    color: #800000;
+    letter-spacing: 1px;
+}
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.project-list.with-bullets > li {
+    margin-bottom: 18px;
+    background: #FFD6B3;
+    border-radius: 8px;
+    padding: 14px 18px 10px 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.project-list.with-bullets > li:last-child {
+    margin-bottom: 0;
+}
+.project-list.with-bullets > li > b {
+    font-size: 1.09rem;
+    color: #6D1717;
+}
+.project-points {
+    margin: 7px 0 0 18px;
+    padding-left: 0;
+    list-style-type: disc;
+    color: #6D1717;
+    font-size: 0.97rem;
+}
+.project-points li {
+    margin: 0 0 4px 0;
+    line-height: 1.5;
+}
+.work-section {
+    max-width: 970px;
+    margin: 45px auto 0 auto;
+}
+.work-section h3 {
+    font-size: 1.18rem;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    color: #6D1717;
+    font-weight: 600;
+}
+.works-gallery {
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.work-item {
+    background: #6D1717;
+    border-radius: 10px;
+    padding: 12px 10px 18px 10px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    min-width: 0;
+}
+.work-item img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 7px;
+    background: #FFF1E6;
+}
+.work-item p {
+    margin: 14px 0 0 0;
+    font-size: 1.01rem;
+    color: #FFF7ED;
+}
+.footer {
+    background: var(--header-bg);
+    color: #fff;
+    text-align: center;
+    padding: 22px 0 12px 0;
+    margin-top: 38px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 0 0 15px 15px;
+}
+@media (max-width: 1150px) {
+    .edu-proj-section { gap: 24px; }
+    .profile-section, .edu-proj-section, .work-section {
+        max-width: 98vw;
+    }
+}
+@media (max-width: 950px) {
+    .edu-proj-section { flex-direction: column; gap: 24px; }
+    .edu-exp-left {
+        border-right: none;
+        border-bottom: 2px solid #FFD6B3;
+    }
+}
+@media (max-width: 800px) {
+    .profile-section {
+        flex-direction: column;
+        border-radius: 0;
+    }
+    .profile-photo {
+        justify-content: center;
+        padding: 22px 0 8px 0;
+    }
+    .profile-desc {
+        padding: 30px 18px 24px 18px;
+        border-left: none;
+        border-top: 2px solid #FFD6B3;
+        border-radius: 0 0 16px 16px;
+    }
+    .edu-exp-left, .project-section {
+        padding: 24px 14px 18px 14px;
+        border-radius: 10px;
+    }
+    .work-section {
+        padding: 0 8px;
+    }
+}
+@media (max-width: 650px) {
+    .works-gallery {
+        flex-direction: column;
+        gap: 14px;
+    }
+    .footer {
+        font-size: 0.93rem;
+        padding: 16px 0 10px 0;
+    }
+}
